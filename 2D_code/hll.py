@@ -30,7 +30,7 @@ def HLLx1(rho_L, rho_R, vx_L, vx_R, vy_L, vy_R,\
     #calculate maximum and minimum signal speed
     cs_L = np.sqrt(gas_gamma * press_L / rho_L)
     cs_R = np.sqrt(gas_gamma * press_R / rho_R)
-    #print(cs_L)
+    #print(press_R)
 
     a_p = np.maximum(vx_L + cs_L, vx_R + cs_R)
     a_p = np.maximum(np.zeros(np.shape(vx_L)), a_p)

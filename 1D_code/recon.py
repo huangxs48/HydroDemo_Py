@@ -101,7 +101,7 @@ def minmodrecon(rho_full, vx_full, press_full):
     pressR_m = press_full[si-1:iu-1]
     pressR_p = press_full[si+1:iu+1]
 
-    press_R = pressR_c - 0.5 * minmod(theta * (pressR_p - pressR_c), \
+    press_R = pressR_c - 0.5 * minmod(theta * (pressR_c - pressR_m), \
            0.5 * (pressR_p - pressL_m), theta * (pressR_p - pressR_c))
     # print(pressR_c, pressR_m, pressR_p)
     # print(minmod(theta * (pressR_c - pressR_m), \
